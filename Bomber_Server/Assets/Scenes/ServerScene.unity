@@ -123,6 +123,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &430750878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 430750880}
+  - component: {fileID: 430750879}
+  m_Layer: 0
+  m_Name: BombController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &430750879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430750878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c850356afc088468a64c7ab7d910c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bombPrefab: {fileID: 2161373871948159194, guid: 11a532e6912fe88488474429579cc47b, type: 3}
+  newBombs: []
+--- !u!4 &430750880
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430750878}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &601534760
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,6 +435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serverController: {fileID: 1881536980}
   coinController: {fileID: 601534761}
+  bombController: {fileID: 430750879}
 --- !u!114 &1881536980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,6 +451,7 @@ MonoBehaviour:
   server: {fileID: 1881536979}
   playerControllerPrefab: {fileID: 5286658894337772518, guid: 23c73d5ae802373449d9e28b5d554890, type: 3}
   coinController: {fileID: 601534761}
+  bombController: {fileID: 430750879}
   spawnArea:
     size: {x: 8, y: 8}
 --- !u!1001 &1056963922686590347
